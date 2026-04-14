@@ -122,7 +122,5 @@
       }
     }
   },
-  "disabled_providers": [
-    "neusiscloud"
-  ]
+  "disabled_providers": ["opencode", "github-copilot"]
 }
