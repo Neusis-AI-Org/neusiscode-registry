@@ -1,6 +1,6 @@
 {
   "provider": {
-    "litellm": {
+    "neusiscode": {
       "npm": "@ai-sdk/openai-compatible",
       "name": "Neusis Code",
       "options": {
