@@ -125,9 +125,18 @@
             "context": 109000,
             "output": 64000
           }
+        },
+        "fake-test-model-42": {
+          "name": "Fake Test Model 42",
+          "limit": {
+            "context": 999999,
+            "output": 99999
+          }
         }
       }
     }
   },
-  "disabled_providers": ["neusiscloud"]
+  "disabled_providers": [
+    "neusiscloud"
+  ]
 }
