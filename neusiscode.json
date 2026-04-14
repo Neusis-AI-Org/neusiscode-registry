@@ -118,13 +118,6 @@
             "context": 272000,
             "output": 128000
           }
-        },
-        "grok-code-fast-1": {
-          "name": "Grok Code Fast 1",
-          "limit": {
-            "context": 109000,
-            "output": 64000
-          }
         }
       }
     }
