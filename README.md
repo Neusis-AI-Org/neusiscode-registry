@@ -5,6 +5,7 @@ Skills, agents, and commands for [Neusis Code](https://github.com/Neusis-AI-Org/
 ## Structure
 
 ```
+neusiscode.json  # Provider config (models, baseURL, disabled providers)
 skills/          # Reusable skill definitions (SKILL.md + optional references/)
 agents/          # Agent definitions (.md files)
 commands/        # Command definitions (.md files)
@@ -67,3 +68,29 @@ subtask: true           # optional
 
 Command template content...
 ```
+
+### Provider Config (Models)
+
+The root `neusiscode.json` defines provider configuration that syncs to all users. Edit model names, limits, and baseURL here — users only need their API key locally.
+
+```jsonc
+{
+  "provider": {
+    "litellm": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Neusis Code",
+      "options": {
+        "baseURL": "https://your-proxy.example.com/v1"
+      },
+      "models": {
+        "model-id": {
+          "name": "Display Name",
+          "limit": { "context": 128000, "output": 32000 }
+        }
+      }
+    }
+  }
+}
+```
+
+To add/remove/rename models: edit `neusiscode.json`, commit, and push. All users pick up changes on next startup.
