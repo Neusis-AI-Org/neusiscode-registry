@@ -143,7 +143,7 @@ $ARGUMENTS
 - `` !`command` `` — Execute bash and embed output inline
 - `@file.ts` — Include file content inline
 
-**Built-in commands:** `/init`, `/connect`, `/undo`, `/redo`, `/share`, `/help`, `/models`, `/new`, `/exit`, `/export`, `/editor`, `/compact`, `/details`
+**Built-in commands:** `/init`,`/undo`, `/redo`, `/share`, `/help`, `/models`, `/new`, `/exit`, `/export`, `/editor`, `/compact`, `/details`
 
 ## Tools
 
@@ -233,23 +233,6 @@ Values: `"allow"` (no prompt), `"ask"` (prompt user), `"deny"` (blocked).
 - `@src/file.ts` — Include file content in your prompt
 - `` !`git log --oneline` `` — Run a command and embed output
 
-## Registry
-
-Neusis Code syncs skills, agents, commands, and provider config from registries on startup:
-
-```json
-{
-  "registry": {
-    "repos": [
-      {
-        "url": "https://github.com/Neusis-AI-Org/neusiscode-registry",
-        "branch": "main"
-      }
-    ]
-  }
-}
-```
-
 ## Common Workflows
 
 **Analyze code (read-only):** Press `Tab` to switch to Plan agent, then ask your question.
@@ -257,9 +240,3 @@ Neusis Code syncs skills, agents, commands, and provider config from registries 
 **Plan then build:** Use Plan agent to design, then `Tab` back to Build agent to implement.
 
 **Undo mistakes:** `/undo` reverts the last set of changes; `/redo` restores them.
-
-**Share conversations:** `/share` creates a shareable link.
-
-**Add a provider key:** `/connect` walks through adding API keys for providers.
-
-$ARGUMENTS
