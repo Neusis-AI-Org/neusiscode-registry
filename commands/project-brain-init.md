@@ -1,5 +1,5 @@
 ---
-description: Bootstrap or refresh the project Knowledge Base via the project-brain skill
+description: Initialize or refresh the project-brain context store via the project-brain skill
 argument-hint: "[section]"
 ---
 
