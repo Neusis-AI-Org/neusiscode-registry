@@ -5,7 +5,7 @@ description: |
 
   Use when working on the project — architecture questions, design decisions, "why does X work this way," ticket context. Skip for trivial edits where no KB document could plausibly change the outcome.
 
-  Precondition: `neusis-neuron_get_file_contents`, `neusis-neuron_get_repository_tree`, `neusis-neuron_search_code` must be available. If not, ignore this skill.
+  Precondition: the neusis-neuron MCP server must be connected, exposing its three tools — file-contents read, repository-tree, and code-search (resolved tool names in the Tools section below). If not, ignore this skill.
 ---
 
 ## `graphify-out/` layout
@@ -30,7 +30,7 @@ The neusis-neuron MCP server is a read-only adapter bound at startup to a single
 
 Tool names above assume the server is registered under the `mcp` key `neusis-neuron` in `neusiscode.json`; if a deployment uses a different key, the `neusis-neuron_` prefix changes accordingly.
 
-There is no write tool — this server is read-only. To orient at the start of a session, read the repo's `agent-guide.md` (and any files under `graphify-out/`) with `neusis-neuron_get_file_contents`. For wiki pages, follow the `[[wikilinks]]` in the page body by reading the linked `wiki/<Node>.md` files.
+There is no write tool — this server is read-only. To orient at the start of a session, read the bound KB repo's `agent-guide.md` (and any files under `graphify-out/`) with `neusis-neuron_get_file_contents`. For wiki pages, follow the `[[wikilinks]]` in the page body by reading the linked `wiki/<Node>.md` files.
 
 
 Ultimately the repo is structured like this:
