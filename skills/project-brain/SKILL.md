@@ -33,7 +33,7 @@ Tool names above assume the server is registered under the `mcp` key `neusis-neu
 There is no write tool — this server is read-only. To orient at the start of a session, read the repo's `agent-guide.md` (and any files under `graphify-out/`) with `neusis-neuron_get_file_contents`. For wiki pages, follow the `[[wikilinks]]` in the page body by reading the linked `wiki/<Node>.md` files.
 
 
-Ultimately the repo is structed like this:
+Ultimately the repo is structured like this:
 
 ```
 +---context
