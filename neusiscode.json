@@ -4,7 +4,8 @@
       "npm": "@ai-sdk/openai-compatible",
       "name": "Neusis Code",
       "options": {
-        "baseURL": "https://litellm-proxy-1074011666170.us-central1.run.app/v1"
+        "baseURL": "https://litellm-proxy-1074011666170.us-central1.run.app/v1",
+        "setCacheKey": true
       },
       "models": {
         "gpt-5.4": {
@@ -30,6 +31,13 @@
         },
         "gpt-5.2": {
           "name": "GPT-5.2",
+          "limit": {
+            "context": 128000,
+            "output": 64000
+          }
+        },
+        "auto": {
+          "name": "Auto",
           "limit": {
             "context": 128000,
             "output": 64000
