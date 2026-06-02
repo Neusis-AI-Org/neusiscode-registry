@@ -49,7 +49,7 @@ Create a `.md` file under `agents/`:
 ---
 description: What this agent does
 mode: subagent          # primary | subagent | all
-model: opencode/model   # optional
+model: neusiscode/gpt-5.4   # optional
 ---
 
 System prompt content...
@@ -62,7 +62,7 @@ Create a `.md` file under `commands/`:
 ```yaml
 ---
 description: What this command does
-model: opencode/model   # optional
+model: neusiscode/gpt-5.4   # optional
 subtask: true           # optional
 ---
 
@@ -76,7 +76,7 @@ The root `neusiscode.json` defines provider configuration that syncs to all user
 ```jsonc
 {
   "provider": {
-    "litellm": {
+    "neusiscode": {
       "npm": "@ai-sdk/openai-compatible",
       "name": "Neusis Code",
       "options": {

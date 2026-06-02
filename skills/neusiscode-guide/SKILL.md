@@ -54,10 +54,10 @@ This creates an `AGENTS.md` file documenting project structure and coding patter
 **Example `neusiscode.json`:**
 ```json
 {
-  "model": "anthropic/claude-sonnet-4-5",
-  "small_model": "anthropic/claude-haiku-4-5",
+  "model": "neusiscode/gpt-5.5",
+  "small_model": "neusiscode/gpt-5.3-codex-spark",
   "provider": {
-    "anthropic": {
+    "neusiscode": {
       "options": { "timeout": 600000 }
     }
   }
@@ -79,7 +79,7 @@ This creates an `AGENTS.md` file documenting project structure and coding patter
 ---
 description: What this agent does
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: neusiscode/gpt-5.4
 ---
 
 System prompt content...
@@ -91,7 +91,7 @@ Or in `neusiscode.json`:
   "agent": {
     "my-agent": {
       "mode": "subagent",
-      "model": "anthropic/claude-sonnet-4-5",
+      "model": "neusiscode/gpt-5.4",
       "description": "What this agent does"
     }
   }
