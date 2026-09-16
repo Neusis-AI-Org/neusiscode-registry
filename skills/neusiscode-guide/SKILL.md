@@ -55,7 +55,7 @@ This creates an `AGENTS.md` file documenting project structure and coding patter
 ```json
 {
   "model": "neusiscode/gpt-6-astra",
-  "small_model": "neusiscode/gpt-5.3-codex-spark",
+  "small_model": "neusiscode/gpt-5.6-luna",
   "provider": {
     "neusiscode": {
       "options": { "timeout": 600000 }
