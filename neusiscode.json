@@ -1,0 +1,110 @@
+{
+  "provider": {
+    "neusiscode": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Neusis Code",
+      "options": {
+        "baseURL": "https://litellm-proxy-1074011666170.us-central1.run.app/v1",
+        "setCacheKey": true
+      },
+      "models": {
+        "gpt-6-astra": {
+          "name": "GPT-6 Astra",
+          "attachment": true,
+          "reasoning": true,
+          "tool_call": true,
+          "modalities": {
+            "input": ["text", "image", "pdf"],
+            "output": ["text"]
+          },
+          "cost": {
+            "input": 5.0,
+            "output": 30.0,
+            "cache_read": 0.5
+          },
+          "limit": {
+            "context": 272000,
+            "output": 128000
+          }
+        },
+        "gpt-5.6-terra": {
+          "name": "GPT-5.6 Terra",
+          "attachment": true,
+          "reasoning": true,
+          "tool_call": true,
+          "modalities": {
+            "input": ["text", "image", "pdf"],
+            "output": ["text"]
+          },
+          "cost": {
+            "input": 2.5,
+            "output": 15.0,
+            "cache_read": 0.25
+          },
+          "limit": {
+            "context": 272000,
+            "output": 128000
+          }
+        },
+        "gpt-5.6-sol": {
+          "name": "GPT-5.6 Sol",
+          "attachment": true,
+          "reasoning": true,
+          "tool_call": true,
+          "modalities": {
+            "input": ["text", "image", "pdf"],
+            "output": ["text"]
+          },
+          "cost": {
+            "input": 2.5,
+            "output": 15.0,
+            "cache_read": 0.25
+          },
+          "limit": {
+            "context": 272000,
+            "output": 128000
+          }
+        },
+        "gpt-5.6-luna": {
+          "name": "GPT-5.6 Luna",
+          "attachment": true,
+          "reasoning": true,
+          "tool_call": true,
+          "modalities": {
+            "input": ["text", "image", "pdf"],
+            "output": ["text"]
+          },
+          "cost": {
+            "input": 2.5,
+            "output": 15.0,
+            "cache_read": 0.25
+          },
+          "limit": {
+            "context": 272000,
+            "output": 128000
+          }
+        },
+        "auto": {
+          "name": "Auto",
+          "attachment": true,
+          "reasoning": true,
+          "tool_call": true,
+          "modalities": {
+            "input": ["text", "image", "pdf"],
+            "output": ["text"]
+          },
+          "cost": {
+            "input": 2.5,
+            "output": 15.0,
+            "cache_read": 0.25
+          },
+          "limit": {
+            "context": 272000,
+            "output": 128000
+          }
+        }
+      }
+    }
+  },
+  "disabled_providers": ["opencode", "github-copilot"]
+}
