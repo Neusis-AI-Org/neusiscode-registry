@@ -49,7 +49,7 @@ Create a `.md` file under `agents/`:
 ---
 description: What this agent does
 mode: subagent          # primary | subagent | all
-model: neusiscode/gpt-6-astra   # optional
+model: neusiscode/gpt-6.1-sol   # optional
 ---
 
 System prompt content...
@@ -62,7 +62,7 @@ Create a `.md` file under `commands/`:
 ```yaml
 ---
 description: What this command does
-model: neusiscode/gpt-6-astra   # optional
+model: neusiscode/gpt-6.1-sol   # optional
 subtask: true           # optional
 ---
 
