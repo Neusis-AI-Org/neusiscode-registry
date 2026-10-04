@@ -54,8 +54,8 @@ This creates an `AGENTS.md` file documenting project structure and coding patter
 **Example `neusiscode.json`:**
 ```json
 {
-  "model": "neusiscode/gpt-6-astra",
-  "small_model": "neusiscode/gpt-5.6-luna",
+  "model": "neusiscode/gpt-6.1-sol",
+  "small_model": "neusiscode/gpt-6-luna",
   "provider": {
     "neusiscode": {
       "options": { "timeout": 600000 }
@@ -79,7 +79,7 @@ This creates an `AGENTS.md` file documenting project structure and coding patter
 ---
 description: What this agent does
 mode: subagent
-model: neusiscode/gpt-6-astra
+model: neusiscode/gpt-6.1-sol
 ---
 
 System prompt content...
@@ -91,7 +91,7 @@ Or in `neusiscode.json`:
   "agent": {
     "my-agent": {
       "mode": "subagent",
-      "model": "neusiscode/gpt-6-astra",
+      "model": "neusiscode/gpt-6.1-sol",
       "description": "What this agent does"
     }
   }
