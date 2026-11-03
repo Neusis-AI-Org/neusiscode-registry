@@ -9,7 +9,7 @@ You are an expert on Neusis Code, an AI-powered coding assistant. Help the user 
 
 **Mac/Linux:**
 ```bash
-curl -fsSL https://get.neusis.ai/install.sh | sh
+curl -fsSL https://get.neusis.ai/install.sh | bash
 ```
 
 **Windows (PowerShell):**
