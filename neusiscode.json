@@ -1,4 +1,5 @@
 {
+  "$schema": "https://docs.neusis.ai/config.json",
   "provider": {
     "neusiscode": {
       "npm": "@ai-sdk/openai-compatible",
@@ -67,6 +68,7 @@
         },
         "gpt-6-luna": {
           "name": "GPT-6 Luna",
+          "family": "gpt-nano",
           "attachment": true,
           "reasoning": true,
           "tool_call": true,
