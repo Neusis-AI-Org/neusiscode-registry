@@ -13,7 +13,7 @@ commands/        # Command definitions (.md files)
 
 ## Usage
 
-This registry is automatically synced when Neusis Code starts. Configure it in your `neusiscode.json`:
+Neusis Code loads its cached copy of this registry at startup and refreshes it in the background. When a refresh brings a change, Neusis Code asks the user to restart. Configure it in your `neusiscode.json`:
 
 ```jsonc
 {
@@ -93,4 +93,4 @@ The root `neusiscode.json` defines provider configuration that syncs to all user
 }
 ```
 
-To add/remove/rename models: edit `neusiscode.json`, commit, and push. All users pick up changes on next startup.
+To add/remove/rename models: edit `neusiscode.json`, commit, and push. Users pick up the change after the next background refresh and a restart.
