@@ -5,8 +5,7 @@
       "npm": "@ai-sdk/openai-compatible",
       "name": "Neusis Code",
       "options": {
-        "baseURL": "https://litellm-proxy-1074011666170.us-central1.run.app/v1",
-        "setCacheKey": true
+        "baseURL": "https://litellm-proxy-1074011666170.us-central1.run.app/v1"
       },
       "models": {
         "gpt-6-astra": {
