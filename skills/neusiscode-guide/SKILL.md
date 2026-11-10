@@ -1,6 +1,6 @@
 ---
 name: neusiscode-guide
-description: Neusis Code product facts - installing, upgrading or uninstalling Neusis Code, the Neusis Cloud provider, its models and API key, and the Neusis registry. For agents, skills, commands, MCP servers, permissions or other configuration, use customize-neusiscode.
+description: Neusis Code install, upgrade and uninstall; the Neusis Cloud provider, models and API key; the Neusis registry. For other configuration, use customize-neusiscode.
 ---
 
 ## Install and upgrade
